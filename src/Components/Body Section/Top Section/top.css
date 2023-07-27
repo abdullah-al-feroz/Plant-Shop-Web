@@ -119,18 +119,13 @@
                     height: 100%;
                     object-fit: cover;
                 }
+                h1, .p, .btn {
+                    z-index: 100;
+                    background-color: white;
+                    position: relative;
+                }
             }
 
-            h1,
-            p,
-            .btn {
-                z-index: 100;
-                background-color: white;
-                /* position: relative;  */
-                position: fixed;
-                /* position: absolute ;*/
-                /* position: sticky  ;  */
-            }
 
 
             h1 {
@@ -139,7 +134,7 @@
                 font-weight: 800;
             }
 
-            p {
+            .p {
                 padding: 1rem;
                 color: var(--paleGreen);
                 font-weight: 500;

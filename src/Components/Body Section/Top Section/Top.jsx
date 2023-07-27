@@ -37,7 +37,7 @@ const Top = () => {
       <div className='cardSection flex'>
         <div className='rightCard flex'>
           <h1>Create and sell extraordinary products</h1>
-          <p>The world's fast growing industry today are natural made products!</p>
+          <p className='p'>The world's fast growing industry today are natural made products!</p>
 
           <div className='buttons flex'>
             <button className='btn'> Explore More</button>
@@ -45,7 +45,7 @@ const Top = () => {
           </div>
 
           <div className='videoDiv'>
-            <video src={video} autoPlay loop muted></video>
+            <video className='video' src={video} autoPlay loop muted></video>
           </div>
 
         </div>

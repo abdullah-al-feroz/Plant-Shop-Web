@@ -10,6 +10,8 @@ import { BiTrendingUp } from 'react-icons/bi'
 import { MdOutlinePermContactCalendar } from 'react-icons/md'
 import { BsCreditCard2Front } from 'react-icons/bs'
 import { BsQuestionCircle } from 'react-icons/bs'
+import { AiOutlineLeftCircle } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 
 const Sidebar = () => {
@@ -108,6 +110,12 @@ const Sidebar = () => {
             </a>
           </li>
 
+          <Link to={'/'}>
+          <button type='submit' className='logBtn flex' >
+            <AiOutlineLeftCircle className='icon' />
+            <span>LogOut</span>
+          </button>
+          </Link>
         </ul>
       </div>
 

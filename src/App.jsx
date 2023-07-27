@@ -1,15 +1,32 @@
 import { useState } from 'react'
-import './App.css'
-import Body from './Components/Body Section/Body'
-import Sidebar from './Components/SideBar Section/sidebar'
+import Login from './Components/Login/Login'
+import Register from './Components/Register/Register'
+
+//Import React Router Dom
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Dashboard from './Components/Dashboard/Dashboard'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <div><Login /></div>
+  },
+  {
+    path: '/register',
+    element: <div><Register /></div>
+  },
+  {
+    path: '/dashboard',
+    element: <div><Dashboard /></div>
+  },
+])
 
 function App() {
 
   return (
-      <div className='container'>
-        <Sidebar/>
-        <Body/>
-      </div>
+    <div>
+      <RouterProvider  router={router}/>
+    </div>
   )
 }
 
